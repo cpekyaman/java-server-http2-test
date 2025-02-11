@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="jetty-server" type="Application" factoryName="Application">
+    <envs>
+      <env name="SERVER_HTTPS_KEYSTOREFILE" value="$USER_HOME$/dev_local/cert/tomcat_local.p12" />
+      <env name="SERVER_HTTPS_KEYSTOREPASS" value="pkymn" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="dev.pkymn.issuedemo.http2.server.jetty.JettyServer" />
+    <module name="java-server-http2-test.main" />
+    <option name="VM_PARAMETERS" value="-Xms512m -Xmx1024m -Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager -Dlog4j2.configurationFile=log4j2-server.xml" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

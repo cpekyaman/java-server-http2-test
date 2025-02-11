@@ -1,0 +1,16 @@
+# we just repeat the same url multiple times.
+# we'll hit the same endpoint with parallel http/2 requests.
+url=https://localhost:8443/http2-server/api/ping
+output=/dev/null
+#
+url=https://localhost:8443/http2-server/api/ping
+output=/dev/null
+#
+url=https://localhost:8443/http2-server/api/ping
+output=/dev/null
+#
+url=https://localhost:8443/http2-server/api/ping
+output=/dev/null
+#
+url=https://localhost:8443/http2-server/api/ping
+output=/dev/null

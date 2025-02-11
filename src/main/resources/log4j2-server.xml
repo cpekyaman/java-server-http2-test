@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="https://logging.apache.org/xml/ns"
+               xsi:schemaLocation="
+                       https://logging.apache.org/xml/ns
+                       https://logging.apache.org/xml/ns/log4j-config-2.xsd"
+               shutdownTimeout="5000">
+
+    <Properties>
+        <Property name="detail.logLevel" value="${sys:detail.logLevel:-info}"/>
+    </Properties>
+
+    <appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %-5p [TraceId:%X{traceId}] [SenderId:%X{senderId}] [%c] {%t} %m%n"/>
+        </Console>
+
+        <RollingFile name="server-trace" filename="${sys:base.directory:-${sys:user.dir}/work}/logs/server_trace.log"
+                     filePattern="${sys:base.directory:-${sys:user.dir}/work}/logs/server_trace.log.%d{yyyy-MM-dd-HH}">
+            <PatternLayout pattern="%d %-5p [TraceId:%X{traceId}] [SenderId:%X{senderId}] [%c] {%t} %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+            <ThresholdFilter level="trace"/>
+        </RollingFile>
+    </appenders>
+
+    <loggers>
+        <!-- these are for some low level tomcat stuff -->
+        <Logger name="org.apache.coyote.http2" level="${detail.logLevel}" additivity="false">
+            <AppenderRef ref="server-trace"/>
+        </Logger>
+        <Logger name="org.apache.tomcat.util.net" level="${detail.logLevel}" additivity="false">
+            <AppenderRef ref="server-trace"/>
+        </Logger>
+
+        <!-- these are for some low level jetty stuff -->
+        <Logger name="org.eclipse.jetty.http2" level="${detail.logLevel}" additivity="false">
+            <AppenderRef ref="server-trace"/>
+        </Logger>
+
+        <!-- our stuff -->
+        <Logger name="dev.pkymn.issuedemo.http2.server" level="info" additivity="false">
+            <AppenderRef ref="stdout"/>
+        </Logger>
+
+        <root level="info">
+            <AppenderRef ref="stdout" level="info"/>
+        </root>
+    </loggers>
+</Configuration>

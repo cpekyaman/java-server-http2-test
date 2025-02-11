@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns="https://logging.apache.org/xml/ns"
+               xsi:schemaLocation="
+                       https://logging.apache.org/xml/ns
+                       https://logging.apache.org/xml/ns/log4j-config-2.xsd">
+
+    <Properties>
+        <Property name="detail.logLevel" value="${sys:detail.logLevel:-info}"/>
+    </Properties>
+
+    <appenders>
+        <Console name="stdout" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d %-5p [TraceId:%X{traceId}] [SenderId:%X{senderId}] [%c] {%t} %m%n"/>
+        </Console>
+
+        <RollingFile name="client-trace" filename="${sys:base.directory:-${sys:user.dir}/work}/logs/client_trace.log"
+                     filePattern="${sys:base.directory:-${sys:user.dir}/work}/logs/client_trace.log.%d{yyyy-MM-dd-HH}">
+            <PatternLayout pattern="%d %-5p [TraceId:%X{traceId}] [SenderId:%X{senderId}] [%c] {%t} %m%n"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+            </Policies>
+            <ThresholdFilter level="trace"/>
+        </RollingFile>
+    </appenders>
+
+    <loggers>
+        <!-- log level client library stuff-->
+        <Logger name="org.apache.hc.core5" level="${detail.logLevel}" additivity="false">
+            <AppenderRef ref="client-trace"/>
+        </Logger>
+        <Logger name="org.apache.hc.client5" level="${detail.logLevel}" additivity="false">
+            <AppenderRef ref="client-trace"/>
+        </Logger>
+
+        <!-- our stuff -->
+        <Logger name="dev.pkymn.issuedemo.http2.client" level="info" additivity="false">
+            <AppenderRef ref="stdout"/>
+        </Logger>
+
+        <root level="info">
+            <AppenderRef ref="stdout" level="info"/>
+        </root>
+    </loggers>
+</Configuration>

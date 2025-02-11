@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="jdk-http2-client" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="dev.pkymn.issuedemo.http2.client.jdk.JdkHttp2Client" />
+    <module name="java-server-http2-test.main" />
+    <option name="VM_PARAMETERS" value="-Xms512m -Xmx512m -Dlog4j2.configurationFile=log4j2-client.xml" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

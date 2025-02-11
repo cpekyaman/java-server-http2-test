@@ -1,0 +1,119 @@
+plugins {
+    id 'java'
+}
+
+group = 'dev.pkymn.issuedemo'
+version = '1.0-SNAPSHOT'
+
+def log4jGroupId = 'org.apache.logging.log4j'
+def log4jVersion = '2.24.3'
+
+def httpClientGroupId = 'org.apache.httpcomponents.client5'
+def httpClientVersion = '5.4.1'
+def httpCoreGroupId = 'org.apache.httpcomponents.core5'
+def httpCoreVersion = '5.3.2'
+
+def tomcatGroupId = 'org.apache.tomcat'
+def tomcatVersion = '10.1.33'
+
+def jettyGroupId = 'org.eclipse.jetty'
+def jettyH2GroupId = 'org.eclipse.jetty.http2'
+def jettyEEGroupId = 'org.eclipse.jetty.ee10'
+def jettyVersion = '12.0.16'
+
+dependencies {
+    // logging, including jul and slf4j adapters / bindings
+    implementation "${log4jGroupId}:log4j-api:${log4jVersion}"
+    runtimeOnly "${log4jGroupId}:log4j-core:${log4jVersion}"
+    runtimeOnly "${log4jGroupId}:log4j-jul:${log4jVersion}"
+    runtimeOnly "${log4jGroupId}:log4j-slf4j2-impl:${log4jVersion}"
+
+    // http-client
+    implementation "${httpClientGroupId}:httpclient5:${httpClientVersion}"
+    implementation "${httpCoreGroupId}:httpcore5:${httpCoreVersion}"
+    implementation "${httpCoreGroupId}:httpcore5-h2:${httpCoreVersion}"
+
+    // jetty server
+    implementation "${jettyH2GroupId}:jetty-http2-server:${jettyVersion}"
+    implementation "${jettyGroupId}:jetty-alpn-server:${jettyVersion}"
+    implementation "${jettyGroupId}:jetty-alpn-java-server:${jettyVersion}"
+    implementation "${jettyEEGroupId}:jetty-ee10-servlet:${jettyVersion}"
+
+    // tomcat server
+    implementation "${tomcatGroupId}:tomcat-servlet-api:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-jsp-api:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-el-api:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-annotations-api:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-jaspic-api:${tomcatVersion}"
+
+    implementation "${tomcatGroupId}:tomcat-api:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-catalina:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-coyote:${tomcatVersion}"
+
+    implementation "${tomcatGroupId}:tomcat-juli:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-util:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-util-scan:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-jasper-el:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-jni:${tomcatVersion}"
+
+    implementation "${tomcatGroupId}:tomcat-websocket-api:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-websocket:${tomcatVersion}"
+    implementation "${tomcatGroupId}:tomcat-websocket-client-api:${tomcatVersion}"
+
+    // unit testing
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+// server runner tasks
+def runServer(JavaExec task, String mainClass) {
+    task.mainClass = mainClass
+    task.classpath = sourceSets.main.runtimeClasspath
+
+    def logLevel = System.getProperty("detail.logLevel", "info")
+
+    task.allJvmArgs = [
+            '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=localhost:8100',
+            '-Xms512m',
+            '-Xmx1024m',
+            "-Dbase.directory=${projectDir}/work",
+            '-Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager',
+            "-Dserver.https.keystore.file=${projectDir}/cert/tomcat_local.p12",
+            "-Dserver.https.keystore.pass=pkymn",
+            "-Dlog4j2.configurationFile=log4j2-server.xml",
+            "-Ddetail.logLevel=${logLevel}"
+    ]
+}
+task runTomcat(type: JavaExec) { task ->
+    runServer(task, 'dev.pkymn.issuedemo.http2.server.tomcat.TomcatServer')
+}
+task runJetty(type: JavaExec) { task ->
+    runServer(task, 'dev.pkymn.issuedemo.http2.server.jetty.JettyServer')
+}
+
+// client runner tasks
+def runClient(JavaExec task, String mainClass) {
+    task.mainClass = mainClass
+    task.classpath = sourceSets.main.runtimeClasspath
+
+    def logLevel = System.getProperty("detail.logLevel", "info")
+
+    task.allJvmArgs = [
+            '-Xms512m',
+            '-Xmx512m',
+            "-Dbase.directory=${projectDir}/work",
+            '-Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager',
+            "-Dlog4j2.configurationFile=log4j2-client.xml",
+            "-Ddetail.logLevel=${logLevel}"
+    ]
+}
+task runJdkClient(type: JavaExec) { task ->
+    runClient(task, 'dev.pkymn.issuedemo.http2.client.jdk.JdkHttp2Client')
+}
+task runApacheClient(type: JavaExec) { task ->
+    runClient(task, 'dev.pkymn.issuedemo.http2.client.apache.ApacheHttp2Client')
+}
