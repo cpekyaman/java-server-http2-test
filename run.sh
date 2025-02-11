@@ -11,9 +11,10 @@ echo "creating work directory if not exists"
 mkdir -p work/{logs,jetty/logs,tomcat/logs,tomcat/work}
 
 if [ $# -eq 0 ]; then
-  echo "running tomcat server with curl client"
+  echo "no arguments are given, will use defaults"
 else
 
+  echo "parsing arguments"
   # we pre-process args for some flags as they affect other args
   for arg in "$@"
   do
@@ -136,11 +137,12 @@ else
         ;;
     esac
   done
-
-  echo "running selected server and client"
 fi
 
 ./clean.sh
+
+echo "running test with selected options"
+echo "further logs can be seen in output files under work/logs"
 
 (trap 'kill 0' SIGINT; (./gradlew ${SERVER_CMD} > ${HOME_DIR}/work/logs/server_out.log 2>&1) & (cd ${CLIENT_DIR}; eval ${CLIENT_CMD} > ${HOME_DIR}/work/logs/client_out.log 2>&1) & wait)
     
