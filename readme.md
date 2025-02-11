@@ -5,6 +5,8 @@ Reproduces the issue where the server sends the client a 500 error due to some p
 By default, runs a `tomcat` server and a single threaded `curl` client to try to reproduce the error.  
 Multiple server and client options are available (a very limited set).  
 
+`trace_logs_history` directory contains trace logs from some runs with the reproduced issue already.
+
 ### how to run
 
 - run `./run/sh` driver script from project root, which will occupy the shell (possibly with `-m -t` options).
@@ -50,6 +52,10 @@ So, you can individually start / stop them without using the driver script.
   can be run via gradle command `./gradlew runJetty`
 
 ### client
+
+All non-java clients reside in folders under `client` subfolder. 
+All of those clients, except curl, require specific language runtimes to be installed.
+Java clients reside in `client` subpackage under the root package of main java source set.
 
 - **go**:   
   requires [golang](https://go.dev/doc/install) to be installed.  

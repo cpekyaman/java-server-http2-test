@@ -1,0 +1,158 @@
+2025/02/11 11:03:12 http2: Transport failed to get client conn for localhost:8443: http2: no cached connection was available
+2025/02/11 11:03:12 http2: Transport creating client conn 0x1400010a180 to [::1]:8443
+2025/02/11 11:03:12 http2: Transport encoding header ":authority" = "localhost:8443"
+2025/02/11 11:03:12 http2: Transport encoding header ":method" = "GET"
+2025/02/11 11:03:12 http2: Transport encoding header ":path" = "/http2-server/api/ping"
+2025/02/11 11:03:12 http2: Transport encoding header ":scheme" = "https"
+2025/02/11 11:03:12 http2: Transport encoding header "accept-encoding" = "gzip"
+2025/02/11 11:03:12 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2025/02/11 11:03:12 http2: Transport received SETTINGS len=6, settings: MAX_CONCURRENT_STREAMS=128
+2025/02/11 11:03:12 http2: Transport received SETTINGS flags=ACK len=0
+2025/02/11 11:03:12 http2: Transport received PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x01"
+2025/02/11 11:03:12 http2: Transport received HEADERS flags=END_HEADERS stream=1 len=33
+2025/02/11 11:03:12 http2: Transport closing idle conn 0x1400010a180 (forSingleUse=true, maxStream=1)
+2025/02/11 11:03:12 http2: Transport readFrame error on conn 0x1400010a180: (*net.OpError) read tcp [::1]:52195->[::1]:8443: use of closed network connection
+2025/02/11 11:03:12 http2: Transport failed to get client conn for localhost:8443: http2: no cached connection was available
+2025/02/11 11:03:12 http2: Transport creating client conn 0x1400010a480 to [::1]:8443
+2025/02/11 11:03:12 http2: Transport encoding header ":authority" = "localhost:8443"
+2025/02/11 11:03:12 http2: Transport encoding header ":method" = "GET"
+2025/02/11 11:03:12 http2: Transport encoding header ":path" = "/http2-server/api/ping"
+2025/02/11 11:03:12 http2: Transport encoding header ":scheme" = "https"
+2025/02/11 11:03:12 http2: Transport encoding header "trace-id" = "3ed61799-832c-4c12-b956-ef9b5b46fb5e"
+2025/02/11 11:03:12 http2: Transport encoding header "sender-id" = "1"
+2025/02/11 11:03:12 http2: Transport encoding header "accept-encoding" = "gzip"
+2025/02/11 11:03:12 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2025/02/11 11:03:12 http2: Transport received SETTINGS len=6, settings: MAX_CONCURRENT_STREAMS=128
+2025/02/11 11:03:12 http2: Transport received SETTINGS flags=ACK len=0
+2025/02/11 11:03:12 http2: Transport received PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x01"
+2025/02/11 11:03:12 http2: Transport received HEADERS flags=END_HEADERS stream=1 len=33
+2025/02/11 11:03:12 http2: Transport closing idle conn 0x1400010a480 (forSingleUse=true, maxStream=1)
+2025/02/11 11:03:12 http2: Transport readFrame error on conn 0x1400010a480: (*net.OpError) read tcp [::1]:52196->[::1]:8443: use of closed network connection
+2025/02/11 11:03:12 http2: Transport failed to get client conn for localhost:8443: http2: no cached connection was available
+2025/02/11 11:03:13 http2: Transport creating client conn 0x14000218180 to [::1]:8443
+2025/02/11 11:03:13 http2: Transport encoding header ":authority" = "localhost:8443"
+2025/02/11 11:03:13 http2: Transport encoding header ":method" = "GET"
+2025/02/11 11:03:13 http2: Transport encoding header ":path" = "/http2-server/api/ping"
+2025/02/11 11:03:13 http2: Transport encoding header ":scheme" = "https"
+2025/02/11 11:03:13 http2: Transport encoding header "trace-id" = "427368e0-b931-4697-becf-99f6d4b166f0"
+2025/02/11 11:03:13 http2: Transport encoding header "sender-id" = "1"
+2025/02/11 11:03:13 http2: Transport encoding header "accept-encoding" = "gzip"
+2025/02/11 11:03:13 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2025/02/11 11:03:13 http2: Transport received SETTINGS len=6, settings: MAX_CONCURRENT_STREAMS=128
+2025/02/11 11:03:13 http2: Transport received SETTINGS flags=ACK len=0
+2025/02/11 11:03:13 http2: Transport received PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x01"
+2025/02/11 11:03:13 http2: Transport received HEADERS flags=END_HEADERS stream=1 len=33
+2025/02/11 11:03:13 http2: Transport closing idle conn 0x14000218180 (forSingleUse=true, maxStream=1)
+2025/02/11 11:03:13 http2: Transport readFrame error on conn 0x14000218180: (*net.OpError) read tcp [::1]:52197->[::1]:8443: use of closed network connection
+2025/02/11 11:03:13 http2: Transport failed to get client conn for localhost:8443: http2: no cached connection was available
+2025/02/11 11:03:13 http2: Transport creating client conn 0x140000f8600 to [::1]:8443
+2025/02/11 11:03:13 http2: Transport encoding header ":authority" = "localhost:8443"
+2025/02/11 11:03:13 http2: Transport encoding header ":method" = "GET"
+2025/02/11 11:03:13 http2: Transport encoding header ":path" = "/http2-server/api/ping"
+2025/02/11 11:03:13 http2: Transport encoding header ":scheme" = "https"
+2025/02/11 11:03:13 http2: Transport encoding header "trace-id" = "f3700b58-46fc-4cf7-98c0-b317c53bcf75"
+2025/02/11 11:03:13 http2: Transport encoding header "sender-id" = "1"
+2025/02/11 11:03:13 http2: Transport encoding header "accept-encoding" = "gzip"
+2025/02/11 11:03:13 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2025/02/11 11:03:13 http2: Transport received SETTINGS len=6, settings: MAX_CONCURRENT_STREAMS=128
+2025/02/11 11:03:13 http2: Transport received SETTINGS flags=ACK len=0
+2025/02/11 11:03:13 http2: Transport received PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x01"
+2025/02/11 11:03:13 http2: Transport received HEADERS flags=END_HEADERS stream=1 len=33
+2025/02/11 11:03:13 http2: Transport closing idle conn 0x140000f8600 (forSingleUse=true, maxStream=1)
+2025/02/11 11:03:13 http2: Transport readFrame error on conn 0x140000f8600: (*net.OpError) read tcp [::1]:52198->[::1]:8443: use of closed network connection
+2025/02/11 11:03:13 http2: Transport failed to get client conn for localhost:8443: http2: no cached connection was available
+2025/02/11 11:03:13 http2: Transport creating client conn 0x140000f8a80 to [::1]:8443
+2025/02/11 11:03:13 http2: Transport encoding header ":authority" = "localhost:8443"
+2025/02/11 11:03:13 http2: Transport encoding header ":method" = "GET"
+2025/02/11 11:03:13 http2: Transport encoding header ":path" = "/http2-server/api/ping"
+2025/02/11 11:03:13 http2: Transport encoding header ":scheme" = "https"
+2025/02/11 11:03:13 http2: Transport encoding header "trace-id" = "beee61f1-70a7-467c-90b7-6321ab8c8c13"
+2025/02/11 11:03:13 http2: Transport encoding header "sender-id" = "1"
+2025/02/11 11:03:13 http2: Transport encoding header "accept-encoding" = "gzip"
+2025/02/11 11:03:13 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2025/02/11 11:03:13 http2: Transport received SETTINGS len=6, settings: MAX_CONCURRENT_STREAMS=128
+2025/02/11 11:03:13 http2: Transport received SETTINGS flags=ACK len=0
+2025/02/11 11:03:13 http2: Transport received PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x01"
+2025/02/11 11:03:13 http2: Transport received HEADERS flags=END_HEADERS stream=1 len=33
+2025/02/11 11:03:13 http2: Transport closing idle conn 0x140000f8a80 (forSingleUse=true, maxStream=1)
+2025/02/11 11:03:13 http2: Transport readFrame error on conn 0x140000f8a80: (*net.OpError) read tcp [::1]:52199->[::1]:8443: use of closed network connection
+2025/02/11 11:03:13 http2: Transport failed to get client conn for localhost:8443: http2: no cached connection was available
+2025/02/11 11:03:13 http2: Transport creating client conn 0x14000218600 to [::1]:8443
+2025/02/11 11:03:13 http2: Transport encoding header ":authority" = "localhost:8443"
+2025/02/11 11:03:13 http2: Transport encoding header ":method" = "GET"
+2025/02/11 11:03:13 http2: Transport encoding header ":path" = "/http2-server/api/ping"
+2025/02/11 11:03:13 http2: Transport encoding header ":scheme" = "https"
+2025/02/11 11:03:13 http2: Transport encoding header "trace-id" = "e52bb132-22f0-4e7b-8712-4df2180c6a7f"
+2025/02/11 11:03:13 http2: Transport encoding header "sender-id" = "1"
+2025/02/11 11:03:13 http2: Transport encoding header "accept-encoding" = "gzip"
+2025/02/11 11:03:13 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2025/02/11 11:03:13 http2: Transport received SETTINGS len=6, settings: MAX_CONCURRENT_STREAMS=128
+2025/02/11 11:03:13 http2: Transport received SETTINGS flags=ACK len=0
+2025/02/11 11:03:13 http2: Transport received PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x01"
+2025/02/11 11:03:13 http2: Transport received HEADERS flags=END_HEADERS stream=1 len=33
+2025/02/11 11:03:13 http2: Transport closing idle conn 0x14000218600 (forSingleUse=true, maxStream=1)
+2025/02/11 11:03:13 http2: Transport readFrame error on conn 0x14000218600: (*net.OpError) read tcp [::1]:52200->[::1]:8443: use of closed network connection
+2025/02/11 11:03:13 http2: Transport failed to get client conn for localhost:8443: http2: no cached connection was available
+2025/02/11 11:03:13 http2: Transport creating client conn 0x1400010a780 to [::1]:8443
+2025/02/11 11:03:13 http2: Transport encoding header ":authority" = "localhost:8443"
+2025/02/11 11:03:13 http2: Transport encoding header ":method" = "GET"
+2025/02/11 11:03:13 http2: Transport encoding header ":path" = "/http2-server/api/ping"
+2025/02/11 11:03:13 http2: Transport encoding header ":scheme" = "https"
+2025/02/11 11:03:13 http2: Transport encoding header "sender-id" = "1"
+2025/02/11 11:03:13 http2: Transport encoding header "trace-id" = "f625b79c-e66f-4f9e-b1ff-6fdd48a1baf7"
+2025/02/11 11:03:13 http2: Transport encoding header "accept-encoding" = "gzip"
+2025/02/11 11:03:13 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2025/02/11 11:03:13 http2: Transport received SETTINGS len=6, settings: MAX_CONCURRENT_STREAMS=128
+2025/02/11 11:03:13 http2: Transport received SETTINGS flags=ACK len=0
+2025/02/11 11:03:13 http2: Transport received PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x01"
+2025/02/11 11:03:13 http2: Transport received HEADERS flags=END_HEADERS stream=1 len=33
+2025/02/11 11:03:13 http2: Transport closing idle conn 0x1400010a780 (forSingleUse=true, maxStream=1)
+2025/02/11 11:03:13 http2: Transport readFrame error on conn 0x1400010a780: (*net.OpError) read tcp [::1]:52201->[::1]:8443: use of closed network connection
+2025/02/11 11:03:13 http2: Transport failed to get client conn for localhost:8443: http2: no cached connection was available
+2025/02/11 11:03:13 http2: Transport creating client conn 0x14000218c00 to [::1]:8443
+2025/02/11 11:03:13 http2: Transport encoding header ":authority" = "localhost:8443"
+2025/02/11 11:03:13 http2: Transport encoding header ":method" = "GET"
+2025/02/11 11:03:13 http2: Transport encoding header ":path" = "/http2-server/api/ping"
+2025/02/11 11:03:13 http2: Transport encoding header ":scheme" = "https"
+2025/02/11 11:03:13 http2: Transport encoding header "sender-id" = "1"
+2025/02/11 11:03:13 http2: Transport encoding header "trace-id" = "f7384919-ebc4-42c2-9a75-c86b688fbfe5"
+2025/02/11 11:03:13 http2: Transport encoding header "accept-encoding" = "gzip"
+2025/02/11 11:03:13 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2025/02/11 11:03:13 http2: Transport received SETTINGS len=6, settings: MAX_CONCURRENT_STREAMS=128
+2025/02/11 11:03:13 http2: Transport received SETTINGS flags=ACK len=0
+2025/02/11 11:03:13 http2: Transport received PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x01"
+2025/02/11 11:03:13 http2: Transport received HEADERS flags=END_HEADERS stream=1 len=33
+2025/02/11 11:03:13 http2: Transport closing idle conn 0x14000218c00 (forSingleUse=true, maxStream=1)
+2025/02/11 11:03:13 http2: Transport readFrame error on conn 0x14000218c00: (*net.OpError) read tcp [::1]:52202->[::1]:8443: use of closed network connection
+2025/02/11 11:03:13 http2: Transport failed to get client conn for localhost:8443: http2: no cached connection was available
+2025/02/11 11:03:13 http2: Transport creating client conn 0x1400010aa80 to [::1]:8443
+2025/02/11 11:03:13 http2: Transport encoding header ":authority" = "localhost:8443"
+2025/02/11 11:03:13 http2: Transport encoding header ":method" = "GET"
+2025/02/11 11:03:13 http2: Transport encoding header ":path" = "/http2-server/api/ping"
+2025/02/11 11:03:13 http2: Transport encoding header ":scheme" = "https"
+2025/02/11 11:03:13 http2: Transport encoding header "sender-id" = "1"
+2025/02/11 11:03:13 http2: Transport encoding header "trace-id" = "912160a6-5ba3-46c2-9e3a-45b8f4e56d46"
+2025/02/11 11:03:13 http2: Transport encoding header "accept-encoding" = "gzip"
+2025/02/11 11:03:13 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2025/02/11 11:03:13 http2: Transport received SETTINGS len=6, settings: MAX_CONCURRENT_STREAMS=128
+2025/02/11 11:03:13 http2: Transport received SETTINGS flags=ACK len=0
+2025/02/11 11:03:13 http2: Transport received PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x01"
+2025/02/11 11:03:13 http2: Transport received HEADERS flags=END_HEADERS stream=1 len=33
+2025/02/11 11:03:13 http2: Transport closing idle conn 0x1400010aa80 (forSingleUse=true, maxStream=1)
+2025/02/11 11:03:13 http2: Transport readFrame error on conn 0x1400010aa80: (*net.OpError) read tcp [::1]:52203->[::1]:8443: use of closed network connection
+2025/02/11 11:03:13 http2: Transport failed to get client conn for localhost:8443: http2: no cached connection was available
+2025/02/11 11:03:13 http2: Transport creating client conn 0x14000218f00 to [::1]:8443
+2025/02/11 11:03:13 http2: Transport encoding header ":authority" = "localhost:8443"
+2025/02/11 11:03:13 http2: Transport encoding header ":method" = "GET"
+2025/02/11 11:03:13 http2: Transport encoding header ":path" = "/http2-server/api/ping"
+2025/02/11 11:03:13 http2: Transport encoding header ":scheme" = "https"
+2025/02/11 11:03:13 http2: Transport encoding header "trace-id" = "d64ea5f4-cd3f-4ea0-97bf-ff9f5633b125"
+2025/02/11 11:03:13 http2: Transport encoding header "sender-id" = "1"
+2025/02/11 11:03:13 http2: Transport encoding header "accept-encoding" = "gzip"
+2025/02/11 11:03:13 http2: Transport encoding header "user-agent" = "Go-http-client/2.0"
+2025/02/11 11:03:13 http2: Transport received SETTINGS len=6, settings: MAX_CONCURRENT_STREAMS=128
+2025/02/11 11:03:13 http2: Transport received SETTINGS flags=ACK len=0
+2025/02/11 11:03:13 http2: Transport received PING len=8 ping="\x00\x00\x00\x00\x00\x00\x00\x01"
+2025/02/11 11:03:13 http2: Transport received HEADERS flags=END_HEADERS stream=1 len=59
+2025/02/11 11:03:13 http2: Transport closing idle conn 0x14000218f00 (forSingleUse=true, maxStream=1)
+2025/02/11 11:03:13 http2: Transport readFrame error on conn 0x14000218f00: (*net.OpError) read tcp [::1]:52204->[::1]:8443: use of closed network connection

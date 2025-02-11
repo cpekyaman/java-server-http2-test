@@ -1,0 +1,28 @@
+> Task :compileJava UP-TO-DATE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+
+> Task :runTomcat
+2025-02-11T10:03:12.203371Z main ERROR Cannot set JUL log level through log4j-api: ignoring call to Logger.setLevel(INFO)
+2025-02-11 11:03:12,222 INFO  [TraceId:] [SenderId:] [org.apache.catalina.core.AprLifecycleListener] {main} The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [/Users/cenk/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2025-02-11 11:03:12,347 INFO  [TraceId:] [SenderId:] [org.apache.coyote.http11.Http11NioProtocol] {main} The ["https-jsse-nio-8443"] connector has been configured to support negotiation to [h2] via ALPN
+2025-02-11 11:03:12,347 INFO  [TraceId:] [SenderId:] [org.apache.coyote.http11.Http11NioProtocol] {main} Initializing ProtocolHandler ["https-jsse-nio-8443"]
+2025-02-11 11:03:12,503 INFO  [TraceId:] [SenderId:] [org.apache.catalina.core.StandardService] {main} Starting service [Tomcat]
+2025-02-11 11:03:12,503 INFO  [TraceId:] [SenderId:] [org.apache.catalina.core.StandardEngine] {main} Starting Servlet engine: [Apache Tomcat/10.1.33]
+2025-02-11 11:03:12,564 INFO  [TraceId:] [SenderId:] [org.apache.coyote.http11.Http11NioProtocol] {main} Starting ProtocolHandler ["https-jsse-nio-8443"]
+2025-02-11 11:03:12,570 INFO  [TraceId:] [SenderId:] [dev.pkymn.issuedemo.http2.server.tomcat.TomcatServer] {main} Running Tomcat 10.1.33 in base directory /Users/cenk/workspace/demos/java-server-http2-test/work/tomcat
+2025-02-11 11:03:13,820 WARN  [TraceId:d64ea5f4-cd3f-4ea0-97bf-ff9f5633b125] [SenderId:1] [dev.pkymn.issuedemo.http2.server.tomcat.valve.LoggingAccessLogValve] {https-jsse-nio-8443-exec-4} Unhandled error in request for url https://localhost:8443/http2-server/api/ping with status 500
+java.io.IOException: null
+	at org.apache.coyote.http2.Stream$StandardStreamInputBuffer.receiveReset(Stream.java:1516) ~[tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http2.Stream.receiveReset(Stream.java:224) ~[tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http2.Http2UpgradeHandler.close(Http2UpgradeHandler.java:1305) ~[tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http2.Http2UpgradeHandler.upgradeDispatch(Http2UpgradeHandler.java:437) ~[tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http2.Http2AsyncUpgradeHandler.upgradeDispatch(Http2AsyncUpgradeHandler.java:43) ~[tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http2.Http2AsyncParser$FrameCompletionHandler.failed(Http2AsyncParser.java:337) ~[tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.coyote.http2.Http2AsyncParser$FrameCompletionHandler.failed(Http2AsyncParser.java:167) ~[tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.SocketWrapperBase$VectoredIOCompletionHandler.failed(SocketWrapperBase.java:1148) ~[tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1660) ~[tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-util-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-util-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]

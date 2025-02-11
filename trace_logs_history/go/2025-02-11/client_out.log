@@ -1,0 +1,12 @@
+starting test
+configuring trace logging
+using consul http client settings
+checking if server is running
+running 1 senders for 5 minutes for target url https://localhost:8443/http2-server/api/ping
+creating sender tasks
+waiting for client tasks
+sending requests for client 1
+sender 1 got expected error for request d64ea5f4-cd3f-4ea0-97bf-ff9f5633b125
+client 1 got expected response for request d64ea5f4-cd3f-4ea0-97bf-ff9f5633b125, stopping test
+test timed out or completed, client 1 done
+test completed

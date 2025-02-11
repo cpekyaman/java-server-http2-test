@@ -1,0 +1,293 @@
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-7} Connection [964], Stream [7], HTTP header [sender-id], Value [1]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-9} Entry, Connection [962], SocketStatus [ERROR]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-9} Connection [962], State [CONNECTED]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Adding header to index [1] of dynamic table with name [user-agent] and value [curl/8.7.1]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-7} Connection [964], Stream [7], Swallowed [0] bytes
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.tomcat.util.net.NioEndpoint] {https-jsse-nio-8443-exec-9} Calling [org.apache.tomcat.util.net.NioEndpoint@22ea3e46].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@4aeb9a5e:org.apache.tomcat.util.net.SecureNioChannel@1f1ee338:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:8443 remote=/[0:0:0:0:0:0:0:1]:54789]])
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [accept] and value [*/*]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-7} Connection [964], Stream [0], Frame type [HEADERS] resulted in new overhead count of [-210]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-9} Exit, Connection [962], SocketState [CLOSED]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-7} Connection [964], Stream [7], State changed from [OPEN] to [HALF_CLOSED_REMOTE]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [1], HTTP header [accept], Value [*/*]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], Frame type [HEADERS], Flags [5], Payload size [25]
+2025-02-11 11:11:31,191 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-8} Connection [964], Stream [7], Writing the headers, EndOfStream [false]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], State changed from [null] to [IDLE]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Adding header to index [2] of dynamic table with name [accept] and value [*/*]
+2025-02-11 11:11:31,191 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-8} Encoding header [:status] with value [200]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [trace-id] and value [EA911522958647C6]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], State changed from [IDLE] to [OPEN]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], Processing headers payload of size [25]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [1], HTTP header [trace-id], Value [EA911522958647C6]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Using header from index [2] of static table
+2025-02-11 11:11:31,191 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-8} Encoding header [content-length] with value [0]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Emitting header with name [:method] and value [GET]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Adding header to index [3] of dynamic table with name [trace-id] and value [EA911522958647C6]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], HTTP header [:method], Value [GET]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [sender-id] and value [4]
+2025-02-11 11:11:31,191 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-8} Encoding header [date] with value [Tue, 11 Feb 2025 10:11:31 GMT]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [1], HTTP header [sender-id], Value [4]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Using header from index [7] of static table
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Adding header to index [4] of dynamic table with name [sender-id] and value [4]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [1], Swallowed [0] bytes
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-6} Connection [965], Stream [0], Frame type [HEADERS] resulted in new overhead count of [-90]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Emitting header with name [:scheme] and value [https]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [1], State changed from [OPEN] to [HALF_CLOSED_REMOTE]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], HTTP header [:scheme], Value [https]
+2025-02-11 11:11:31,191 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-8} 33 bytes
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], Frame type [HEADERS], Flags [5], Payload size [25]
+2025-02-11 11:11:31,191 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-10} Connection [965], Stream [1], Writing the headers, EndOfStream [false]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], State changed from [null] to [IDLE]
+2025-02-11 11:11:31,191 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-10} Encoding header [:status] with value [200]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Using header from index [0] of dynamic table
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Emitting header with name [:authority] and value [localhost:8443]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], HTTP header [:authority], Value [localhost:8443]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Emitting header with name [:path] and value [/http2-server/api/ping]
+2025-02-11 11:11:31,191 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-8} Connection [964], Stream [7], flushing output with buffer at position [0], writeInProgress [false] and closed [true]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], State changed from [IDLE] to [OPEN]
+2025-02-11 11:11:31,191 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-10} Encoding header [content-length] with value [0]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], Processing headers payload of size [25]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], HTTP header [:path], Value [/http2-server/api/ping]
+2025-02-11 11:11:31,191 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-8} Connection [964], Stream [7], Data length [0], EndOfStream [true]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Using header from index [1] of dynamic table
+2025-02-11 11:11:31,191 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-8} Connection [964], Stream [0], Frame type [DATA] resulted in new overhead count of [-230]
+2025-02-11 11:11:31,191 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-10} Encoding header [date] with value [Tue, 11 Feb 2025 10:11:31 GMT]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [2] of static table
+2025-02-11 11:11:31,191 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-8} Connection [964], Stream [7], State changed from [HALF_CLOSED_REMOTE] to [CLOSED_TX]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:method] and value [GET]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Emitting header with name [user-agent] and value [curl/8.7.1]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], HTTP header [:method], Value [GET]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], HTTP header [user-agent], Value [curl/8.7.1]
+2025-02-11 11:11:31,191 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-10} 33 bytes
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Using header from index [2] of dynamic table
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamProcessor] {https-jsse-nio-8443-exec-8} Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d1002c3:org.apache.tomcat.util.net.SecureNioChannel@365aa26:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:8443 remote=/[0:0:0:0:0:0:0:1]:54791]], Status in: [OPEN_READ], State out: [CLOSED]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [7] of static table
+2025-02-11 11:11:31,191 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-10} Connection [965], Stream [1], flushing output with buffer at position [0], writeInProgress [false] and closed [true]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Emitting header with name [accept] and value [*/*]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:scheme] and value [https]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], HTTP header [accept], Value [*/*]
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-8} upgradeHandler.replace.first
+2025-02-11 11:11:31,191 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-8} stream.recycle.first
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], HTTP header [:scheme], Value [https]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Using header from index [3] of dynamic table
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [0] of dynamic table
+2025-02-11 11:11:31,191 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-10} Connection [965], Stream [1], Data length [0], EndOfStream [true]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Emitting header with name [trace-id] and value [C3BA64252D0784A4]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:authority] and value [localhost:8443]
+2025-02-11 11:11:31,192 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-10} Connection [965], Stream [0], Frame type [DATA] resulted in new overhead count of [-110]
+2025-02-11 11:11:31,192 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-10} Connection [965], Stream [1], State changed from [HALF_CLOSED_REMOTE] to [CLOSED_TX]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamProcessor] {https-jsse-nio-8443-exec-10} Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7f9f42a0:org.apache.tomcat.util.net.SecureNioChannel@28f2652f:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:8443 remote=/[0:0:0:0:0:0:0:1]:54792]], Status in: [OPEN_READ], State out: [CLOSED]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-10} upgradeHandler.replace.first
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-10} stream.recycle.first
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], HTTP header [:authority], Value [localhost:8443]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], HTTP header [trace-id], Value [C3BA64252D0784A4]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:path] and value [/http2-server/api/ping]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Using header from index [4] of dynamic table
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], HTTP header [:path], Value [/http2-server/api/ping]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-7} Emitting header with name [sender-id] and value [1]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [1] of dynamic table
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], HTTP header [sender-id], Value [1]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [user-agent] and value [curl/8.7.1]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], Swallowed [0] bytes
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], HTTP header [user-agent], Value [curl/8.7.1]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-7} Connection [964], Stream [0], Frame type [HEADERS] resulted in new overhead count of [-250]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [2] of dynamic table
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-7} Connection [964], Stream [9], State changed from [OPEN] to [HALF_CLOSED_REMOTE]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [accept] and value [*/*]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], HTTP header [accept], Value [*/*]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.tomcat.util.net.NioEndpoint] {https-jsse-nio-8443-exec-7} Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d1002c3:org.apache.tomcat.util.net.SecureNioChannel@365aa26:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:8443 remote=/[0:0:0:0:0:0:0:1]:54791]]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [3] of dynamic table
+2025-02-11 11:11:31,192 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-4} Connection [964], Stream [9], Writing the headers, EndOfStream [false]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-7} Exit, Connection [964], SocketState [ASYNC_IO]
+2025-02-11 11:11:31,192 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-4} Encoding header [:status] with value [200]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [trace-id] and value [EA911522958647C6]
+2025-02-11 11:11:31,192 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-4} Encoding header [content-length] with value [0]
+2025-02-11 11:11:31,192 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-4} Encoding header [date] with value [Tue, 11 Feb 2025 10:11:31 GMT]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], HTTP header [trace-id], Value [EA911522958647C6]
+2025-02-11 11:11:31,192 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-4} 33 bytes
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [4] of dynamic table
+2025-02-11 11:11:31,192 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-4} Connection [964], Stream [9], flushing output with buffer at position [0], writeInProgress [false] and closed [true]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [sender-id] and value [4]
+2025-02-11 11:11:31,192 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-4} Connection [964], Stream [9], Data length [0], EndOfStream [true]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], HTTP header [sender-id], Value [4]
+2025-02-11 11:11:31,192 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-4} Connection [964], Stream [0], Frame type [DATA] resulted in new overhead count of [-270]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], Swallowed [0] bytes
+2025-02-11 11:11:31,192 TRACE [TraceId:C3BA64252D0784A4] [SenderId:1] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-4} Connection [964], Stream [9], State changed from [HALF_CLOSED_REMOTE] to [CLOSED_TX]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-6} Connection [965], Stream [0], Frame type [HEADERS] resulted in new overhead count of [-130]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [3], State changed from [OPEN] to [HALF_CLOSED_REMOTE]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamProcessor] {https-jsse-nio-8443-exec-4} Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d1002c3:org.apache.tomcat.util.net.SecureNioChannel@365aa26:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:8443 remote=/[0:0:0:0:0:0:0:1]:54791]], Status in: [OPEN_READ], State out: [CLOSED]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [0], Frame type [SETTINGS], Flags [1], Payload size [0]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-4} upgradeHandler.replace.first
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], Frame type [HEADERS], Flags [5], Payload size [25]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-4} stream.recycle.first
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], State changed from [null] to [IDLE]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], State changed from [IDLE] to [OPEN]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], Processing headers payload of size [25]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [2] of static table
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:method] and value [GET]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], HTTP header [:method], Value [GET]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [7] of static table
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:scheme] and value [https]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], HTTP header [:scheme], Value [https]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [0] of dynamic table
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:authority] and value [localhost:8443]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], HTTP header [:authority], Value [localhost:8443]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:path] and value [/http2-server/api/ping]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], HTTP header [:path], Value [/http2-server/api/ping]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [1] of dynamic table
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [user-agent] and value [curl/8.7.1]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], HTTP header [user-agent], Value [curl/8.7.1]
+2025-02-11 11:11:31,192 DEBUG [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-2} Connection [964], Stream [0], Frame type [null], Error
+java.io.IOException: Unable to unwrap data, invalid status [CLOSED]
+	at org.apache.tomcat.util.net.SecureNioChannel.read(SecureNioChannel.java:789) ~[tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1609) [tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-util-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-util-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [2] of dynamic table
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [accept] and value [*/*]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], HTTP header [accept], Value [*/*]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-2} Entry, Connection [964], SocketStatus [ERROR]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-2} Connection [964], State [CONNECTED]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.tomcat.util.net.NioEndpoint] {https-jsse-nio-8443-exec-2} Calling [org.apache.tomcat.util.net.NioEndpoint@22ea3e46].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@d1002c3:org.apache.tomcat.util.net.SecureNioChannel@365aa26:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:8443 remote=/[0:0:0:0:0:0:0:1]:54791]])
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [3] of dynamic table
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [trace-id] and value [EA911522958647C6]
+2025-02-11 11:11:31,192 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-2} Exit, Connection [964], SocketState [CLOSED]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], HTTP header [trace-id], Value [EA911522958647C6]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [4] of dynamic table
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [sender-id] and value [4]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], HTTP header [sender-id], Value [4]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], Swallowed [0] bytes
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-6} Connection [965], Stream [0], Frame type [HEADERS] resulted in new overhead count of [-150]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [5], State changed from [OPEN] to [HALF_CLOSED_REMOTE]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [0], Frame type [PING], Flags [1], Payload size [8]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-6} Connection [965] Round trip time measured as [2,557,083]ns
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], Frame type [HEADERS], Flags [5], Payload size [25]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], State changed from [null] to [IDLE]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], State changed from [IDLE] to [OPEN]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], Processing headers payload of size [25]
+2025-02-11 11:11:31,193 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-1} Connection [965], Stream [5], Writing the headers, EndOfStream [false]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [2] of static table
+2025-02-11 11:11:31,193 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-1} Encoding header [:status] with value [200]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:method] and value [GET]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], HTTP header [:method], Value [GET]
+2025-02-11 11:11:31,193 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-1} Encoding header [content-length] with value [0]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [7] of static table
+2025-02-11 11:11:31,193 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-1} Encoding header [date] with value [Tue, 11 Feb 2025 10:11:31 GMT]
+2025-02-11 11:11:31,193 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-1} 33 bytes
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:scheme] and value [https]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], HTTP header [:scheme], Value [https]
+2025-02-11 11:11:31,193 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-1} Connection [965], Stream [5], flushing output with buffer at position [0], writeInProgress [false] and closed [true]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [0] of dynamic table
+2025-02-11 11:11:31,193 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-1} Connection [965], Stream [5], Data length [0], EndOfStream [true]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:authority] and value [localhost:8443]
+2025-02-11 11:11:31,193 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-1} Connection [965], Stream [0], Frame type [DATA] resulted in new overhead count of [-170]
+2025-02-11 11:11:31,193 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-1} Connection [965], Stream [5], State changed from [HALF_CLOSED_REMOTE] to [CLOSED_TX]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], HTTP header [:authority], Value [localhost:8443]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamProcessor] {https-jsse-nio-8443-exec-1} Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7f9f42a0:org.apache.tomcat.util.net.SecureNioChannel@28f2652f:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:8443 remote=/[0:0:0:0:0:0:0:1]:54792]], Status in: [OPEN_READ], State out: [CLOSED]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:path] and value [/http2-server/api/ping]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-1} upgradeHandler.replace.first
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], HTTP header [:path], Value [/http2-server/api/ping]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-1} stream.recycle.first
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [1] of dynamic table
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [user-agent] and value [curl/8.7.1]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], HTTP header [user-agent], Value [curl/8.7.1]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [2] of dynamic table
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [accept] and value [*/*]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], HTTP header [accept], Value [*/*]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [3] of dynamic table
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [trace-id] and value [EA911522958647C6]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], HTTP header [trace-id], Value [EA911522958647C6]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [4] of dynamic table
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [sender-id] and value [4]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], HTTP header [sender-id], Value [4]
+2025-02-11 11:11:31,193 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], Swallowed [0] bytes
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-6} Connection [965], Stream [0], Frame type [HEADERS] resulted in new overhead count of [-190]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [7], State changed from [OPEN] to [HALF_CLOSED_REMOTE]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], Frame type [HEADERS], Flags [5], Payload size [25]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], State changed from [null] to [IDLE]
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-3} Connection [965], Stream [7], Writing the headers, EndOfStream [false]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], State changed from [IDLE] to [OPEN]
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-3} Encoding header [:status] with value [200]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], Processing headers payload of size [25]
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-3} Encoding header [content-length] with value [0]
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-3} Encoding header [date] with value [Tue, 11 Feb 2025 10:11:31 GMT]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [2] of static table
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:method] and value [GET]
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-3} 33 bytes
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], HTTP header [:method], Value [GET]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [7] of static table
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-3} Connection [965], Stream [7], flushing output with buffer at position [0], writeInProgress [false] and closed [true]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:scheme] and value [https]
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-3} Connection [965], Stream [7], Data length [0], EndOfStream [true]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], HTTP header [:scheme], Value [https]
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-3} Connection [965], Stream [0], Frame type [DATA] resulted in new overhead count of [-210]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [0] of dynamic table
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:authority] and value [localhost:8443]
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-3} Connection [965], Stream [7], State changed from [HALF_CLOSED_REMOTE] to [CLOSED_TX]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], HTTP header [:authority], Value [localhost:8443]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamProcessor] {https-jsse-nio-8443-exec-3} Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7f9f42a0:org.apache.tomcat.util.net.SecureNioChannel@28f2652f:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:8443 remote=/[0:0:0:0:0:0:0:1]:54792]], Status in: [OPEN_READ], State out: [CLOSED]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [:path] and value [/http2-server/api/ping]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-3} upgradeHandler.replace.first
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], HTTP header [:path], Value [/http2-server/api/ping]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-3} stream.recycle.first
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [1] of dynamic table
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [user-agent] and value [curl/8.7.1]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], HTTP header [user-agent], Value [curl/8.7.1]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [2] of dynamic table
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [accept] and value [*/*]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], HTTP header [accept], Value [*/*]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [3] of dynamic table
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [trace-id] and value [EA911522958647C6]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], HTTP header [trace-id], Value [EA911522958647C6]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Using header from index [4] of dynamic table
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.HpackDecoder] {https-jsse-nio-8443-exec-6} Emitting header with name [sender-id] and value [4]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], HTTP header [sender-id], Value [4]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], Swallowed [0] bytes
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-6} Connection [965], Stream [0], Frame type [HEADERS] resulted in new overhead count of [-230]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-6} Connection [965], Stream [9], State changed from [OPEN] to [HALF_CLOSED_REMOTE]
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-9} Connection [965], Stream [9], Writing the headers, EndOfStream [false]
+2025-02-11 11:11:31,194 TRACE [TraceId:] [SenderId:] [org.apache.tomcat.util.net.NioEndpoint] {https-jsse-nio-8443-exec-6} Registered read interest for [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7f9f42a0:org.apache.tomcat.util.net.SecureNioChannel@28f2652f:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:8443 remote=/[0:0:0:0:0:0:0:1]:54792]]
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-9} Encoding header [:status] with value [200]
+2025-02-11 11:11:31,194 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-9} Encoding header [content-length] with value [0]
+2025-02-11 11:11:31,195 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-6} Exit, Connection [965], SocketState [ASYNC_IO]
+2025-02-11 11:11:31,195 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-9} Encoding header [date] with value [Tue, 11 Feb 2025 10:11:31 GMT]
+2025-02-11 11:11:31,195 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-9} 33 bytes
+2025-02-11 11:11:31,195 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-6} Connection [965], Connection preface received from client
+2025-02-11 11:11:31,195 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-6} Exit, Connection [965], SocketState [ASYNC_IO]
+2025-02-11 11:11:31,195 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-9} Connection [965], Stream [9], flushing output with buffer at position [0], writeInProgress [false] and closed [true]
+2025-02-11 11:11:31,195 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-9} Connection [965], Stream [9], Data length [0], EndOfStream [true]
+2025-02-11 11:11:31,195 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-9} Connection [965], Stream [0], Frame type [DATA] resulted in new overhead count of [-250]
+2025-02-11 11:11:31,195 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-9} Connection [965], Stream [9], State changed from [HALF_CLOSED_REMOTE] to [CLOSED_TX]
+2025-02-11 11:11:31,195 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamProcessor] {https-jsse-nio-8443-exec-9} Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7f9f42a0:org.apache.tomcat.util.net.SecureNioChannel@28f2652f:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:8443 remote=/[0:0:0:0:0:0:0:1]:54792]], Status in: [OPEN_READ], State out: [CLOSED]
+2025-02-11 11:11:31,195 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-9} upgradeHandler.replace.first
+2025-02-11 11:11:31,195 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-9} stream.recycle.first
+2025-02-11 11:11:31,196 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-5} Connection [965], Stream [3], Writing the headers, EndOfStream [false]
+2025-02-11 11:11:31,196 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-5} Encoding header [:status] with value [500]
+2025-02-11 11:11:31,196 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-5} Encoding header [content-type] with value [text/html;charset=utf-8]
+2025-02-11 11:11:31,197 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-5} Encoding header [content-language] with value [en]
+2025-02-11 11:11:31,197 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-5} Encoding header [content-length] with value [1974]
+2025-02-11 11:11:31,197 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.HpackEncoder] {https-jsse-nio-8443-exec-5} Encoding header [date] with value [Tue, 11 Feb 2025 10:11:31 GMT]
+2025-02-11 11:11:31,197 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-5} 59 bytes
+2025-02-11 11:11:31,198 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-5} Connection [965], Stream [3], flushing output with buffer at position [1974], writeInProgress [false] and closed [true]
+2025-02-11 11:11:31,198 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.AbstractStream] {https-jsse-nio-8443-exec-5} Connection [965], Stream [3], reduce flow control window by [1974] to [10483786]
+2025-02-11 11:11:31,198 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.AbstractStream] {https-jsse-nio-8443-exec-5} Connection [965], Stream [0], reduce flow control window by [1974] to [1048574026]
+2025-02-11 11:11:31,198 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-5} Connection [965], Stream [3], Data length [1974], EndOfStream [true]
+2025-02-11 11:11:31,198 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-5} Connection [965], Stream [0], Frame type [DATA] resulted in new overhead count of [-270]
+2025-02-11 11:11:31,198 TRACE [TraceId:EA911522958647C6] [SenderId:4] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-5} Connection [965], Stream [3], State changed from [HALF_CLOSED_REMOTE] to [CLOSED_TX]
+2025-02-11 11:11:31,198 DEBUG [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2Parser] {https-jsse-nio-8443-exec-8} Connection [965], Stream [0], Frame type [null], Error
+java.io.IOException: Unable to unwrap data, invalid status [CLOSED]
+	at org.apache.tomcat.util.net.SecureNioChannel.read(SecureNioChannel.java:789) ~[tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper$NioOperationState.run(NioEndpoint.java:1609) [tomcat-coyote-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) [tomcat-util-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util-10.1.33.jar:10.1.33]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) [tomcat-util-10.1.33.jar:10.1.33]
+	at java.base/java.lang.Thread.run(Thread.java:840) [?:?]
+2025-02-11 11:11:31,198 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-8} Entry, Connection [965], SocketStatus [ERROR]
+2025-02-11 11:11:31,198 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-8} Connection [965], State [CONNECTED]
+2025-02-11 11:11:31,198 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Stream] {https-jsse-nio-8443-exec-8} Connection [965], Stream [3], Reset received due to [8]
+2025-02-11 11:11:31,198 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamStateMachine] {https-jsse-nio-8443-exec-8} Connection [965], Stream [3], State changed from [CLOSED_TX] to [CLOSED_RST_RX]
+2025-02-11 11:11:31,198 DEBUG [TraceId:] [SenderId:] [org.apache.coyote.http2.WindowAllocationManager] {https-jsse-nio-8443-exec-8} Connection [965], Stream [3], Waiting type [0], Notify type [3]
+2025-02-11 11:11:31,198 TRACE [TraceId:] [SenderId:] [org.apache.tomcat.util.net.NioEndpoint] {https-jsse-nio-8443-exec-8} Calling [org.apache.tomcat.util.net.NioEndpoint@22ea3e46].closeSocket([org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7f9f42a0:org.apache.tomcat.util.net.SecureNioChannel@28f2652f:java.nio.channels.SocketChannel[connected local=/[0:0:0:0:0:0:0:1]:8443 remote=/[0:0:0:0:0:0:0:1]:54792]])
+2025-02-11 11:11:31,198 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.Http2UpgradeHandler] {https-jsse-nio-8443-exec-8} Exit, Connection [965], SocketState [CLOSED]
+2025-02-11 11:11:31,198 TRACE [TraceId:] [SenderId:] [org.apache.coyote.http2.StreamProcessor] {https-jsse-nio-8443-exec-5} Socket: [org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper@7f9f42a0:Closed NioChannel], Status in: [OPEN_READ], State out: [CLOSED]

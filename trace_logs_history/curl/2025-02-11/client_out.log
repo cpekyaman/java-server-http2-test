@@ -1,0 +1,259 @@
+* Found bundle for host: 0x600001234240 [can multiplex]
+* Request completely sent off
+* Multiplexed connection found
+* Re-using existing connection with host localhost
+* * Found bundle for host: 0x600000428270 [can multiplex]
+* Multiplexed connection found
+* Re-using existing connection with host localhost
+* Transfer was pending, now try another
+Transfer was pending, now try another
+* * [HTTP/2] [9] OPENED stream for https://localhost:8443/http2-server/api/ping
+* [HTTP/2] [9] [:method: GET]
+* [HTTP/2] [9] [:scheme: https]
+[HTTP/2] [7] OPENED stream for https://localhost:8443/http2-server/api/ping
+* [HTTP/2] [7] [:method: GET]
+* [HTTP/2] [7] [:scheme: https]
+* * [HTTP/2] [9] [:authority: localhost:8443]
+* [HTTP/2] [7] [:authority: localhost:8443]
+* [HTTP/2] [7] [:path: /http2-server/api/ping]
+* [HTTP/2] [7] [user-agent: curl/8.7.1]
+* [HTTP/2] [7] [accept: */*]
+* [HTTP/2] [7] [trace-id: C3BA64252D0784A4]
+* [HTTP/2] [7] [sender-id: 1]
+[HTTP/2] [9] [:path: /http2-server/api/ping]
+* [HTTP/2] [9] [user-agent: curl/8.7.1]
+* [HTTP/2] [9] [accept: */*]
+* [HTTP/2] [9] [trace-id: 424446C020389513]
+* [HTTP/2] [9] [sender-id: 3]
+> GET /http2-server/api/ping HTTP/2
+> < > GET /http2-server/api/ping HTTP/2
+> Host: localhost:8443
+> HTTP/2 200 
+User-Agent: curl/8.7.1
+> Accept: */*
+> Host: localhost:8443
+> User-Agent: curl/8.7.1
+> Accept: */*
+> trace-id: 424446C020389513
+> trace-id: C3BA64252D0784A4
+> sender-id: 1
+> 
+* Request completely sent off
+sender-id: 3
+> 
+< * Found bundle for host: 0x600000428270 [can multiplex]
+* Multiplexed connection found
+< content-length: 0
+< date: Tue, 11 Feb 2025 10:11:31 GMT
+* Re-using existing connection with host localhost
+* Transfer was pending, now try another
+< HTTP/2 200 
+< content-length: 0
+
+* [HTTP/2] [9] OPENED stream for https://localhost:8443/http2-server/api/ping
+{ [0 * [HTTP/2] [9] [:method: GET]
+* [HTTP/2] [9] [:scheme: https]
+* [HTTP/2] [9] [:authority: localhost:8443]
+* [HTTP/2] [9] [:path: /http2-server/api/ping]
+* [HTTP/2] [9] [user-agent: curl/8.7.1]
+* [HTTP/2] [9] [accept: */*]
+< byt* [HTTP/2] [9] [trace-id: C3BA64252D0784A4]
+* [HTTP/2] [9] [sender-id: 1]
+es da> tdate: Tue, 11 Feb 2025 10:11:31 GMT
+< GET /http2-server/api/ping HTTP/2
+> Host: localhost:8443
+> User-Agent: curl/8.7.1
+
+> Accept: */*
+> trace-id: C3BA64252D0784A4
+> asender-id: 1
+> 
+* ]
+* Request completely sent off
+Request completely sent off
+{ [0 bytes data]
+{ [0 bytes data]
+< < HTTP/2 200 
+< content-length: 0
+< date: Tue, 11 Feb 2025 10:11:31 GMT
+< 
+HTTP/2 200 
+< content-length: 0
+< date: Tue, 11 Feb 2025 10:11:31 GMT
+< 
+< HTTP/2 200 
+{ * (304) (IN), TLS handshake, CERT verify (15):
+{ [26< [0 bytecontent-length: 0
+< s ddate: Tue, 11 Feb 2025 10:11:31 GMT
+4< 
+ bya{ [{ 0tta]
+ bytes [esdata]
+0 bytes  data]
+* Connection #0 to host localhost left intact
+data]* (304) (IN), TLS handshake, Finished (20):
+{ [36
+ bytes data]
+* (304) (OUT), TLS handshake, Finished (20):
+} [36 bytes data]
+* SSL connection using TLSv1.3 / AEAD-CHACHA20-POLY1305-SHA256 / [blank] / UNDEF
+* ALPN: server accepted h2
+* Server certificate:
+*  subject: C=NL; O=cpkymn; OU=Development; CN=dev.pkymn
+*  start date: Feb 10 09:40:47 2025 GMT
+*  expire date: Mar 12 09:40:47 2025 GMT
+*  issuer: C=NL; O=cpkymn; OU=Development; CN=dev.pkymn
+*  SSL certificate verify result: self signed certificate (18), continuing anyway.
+* using HTTP/2
+* [HTTP/2] [1] OPENED stream for https://localhost:8443/http2-server/api/ping
+* [HTTP/2] [1] [:method: GET]
+* [HTTP/2] [1] [:scheme: https]
+* [HTTP/2] [1] [:authority: localhost:8443]
+* [HTTP/2] [1] [:path: /http2-server/api/ping]
+* [HTTP/2] [1] [user-agent: curl/8.7.1]
+* [HTTP/2] [1] [accept: */*]
+* [HTTP/2] [1] [trace-id: EA911522958647C6]
+* [HTTP/2] [1] [sender-id: 4]
+> GET /http2-server/api/ping HTTP/2
+> Host: localhost:8443
+> User-Agent: curl/8.7.1
+> Accept: */*
+> trace-id: EA911522958647C6
+> sender-id: 4
+> 
+* Request completely sent off
+* Found bundle for host: 0x6000038306f0 [can multiplex]
+* Multiplexed connection found
+* Re-using existing connection with host localhost
+* Transfer was pending, now try another
+* [HTTP/2] [3] OPENED stream for https://localhost:8443/http2-server/api/ping
+* [HTTP/2] [3] [:method: GET]
+* [HTTP/2] [3] [:scheme: https]
+* [HTTP/2] [3] [:authority: localhost:8443]
+* [HTTP/2] [3] [:path: /http2-server/api/ping]
+* [HTTP/2] [3] [user-agent: curl/8.7.1]
+* [HTTP/2] [3] [accept: */*]
+* [HTTP/2] [3] [trace-id: EA911522958647C6]
+* [HTTP/2] [3] [sender-id: 4]
+> GET /http2-server/api/ping HTTP/2
+> Host: localhost:8443
+> User-Agent: curl/8.7.1
+> Accept: */*
+> trace-id: EA911522958647C6
+> sender-id: 4
+> 
+< HTTP/2 200 
+< content-length: 0
+< HTTP/2 200 
+< content-length: 0
+* Request completely sent off
+< date: Tue, 11 Feb 2025 10:11:31 GMT
+< * Found bundle for host: 0x6000038306f0 [can multiplex]
+* Multiplexed connection found
+date: Tue, 11 Feb 2025 10:11:31 GMT
+< * Re-using existing connection with host localhost
+< 
+
+* Transfer was pending, now try another
+* [HTTP/2] [5] OPENED stream for https://localhost:8443/http2-server/api/ping
+* [HTTP/2] [5] [:method: GET]
+* [HTTP/2] [5] [:scheme: https]
+* [HTTP/2] [5] [:authority: localhost:8443]
+* [HTTP/2] [5] [:path: /http2-server/api/ping]
+* [HTTP/2] [5] [user-agent: curl/8.7.1]
+* [HTTP/2] [5] [accept: */*]
+* [HTTP/2] [5] [trace-id: EA911522958647C6]
+* [HTTP/2] [5] [sender-id: 4]
+> GET /http2-server/api/ping HTTP/2
+> Host: localhost:8443
+> User-Agent: curl/8.7.1
+> Accept: */*
+> trace-id: EA911522958647C6
+> sender-id: 4
+> { [0 by{ t[0
+es d by* tes daata]
+Request completely sent off
+ta]
+* * Connection #0 to host localhost left intact
+Found bundle for host: 0x6000038306f0 [can multiplex]
+* Multiplexed connection found
+* Re-using existing connection with host localhost
+* Transfer was pending, now try another
+* [HTTP/2] [7] OPENED stream for https://localhost:8443/http2-server/api/ping
+* [HTTP/2] [7] [:method: GET]
+* [HTTP/2] [7] [:scheme: https]
+* [HTTP/2] [7] [:authority: localhost:8443]
+* [HTTP/2] [7] [:path: /http2-server/api/ping]
+* [HTTP/2] [7] [user-agent: curl/8.7.1]
+* [HTTP/2] [7] [accept: */*]
+* [HTTP/2] [7] [trace-id: EA911522958647C6]
+* [HTTP/2] [7] [sender-id: 4]
+> GET /http2-server/api/ping HTTP/2
+> Host: localhost:8443
+> User-Agent: curl/8.7.1
+> Accept: */*
+> trace-id: EA911522958647C6
+> sender-id: 4
+> 
+* Request completely sent off
+* Found bundle for host: 0x6000038306f0 [can multiplex]
+* Multiplexed connection found
+* Re-using existing connection with host localhost
+* Transfer was pending, now try another
+* [HTTP/2] [9] OPENED stream for https://localhost:8443/http2-server/api/ping
+* [HTTP/2] [9] [:method: GET]
+* [HTTP/2] [9] [:scheme: https]
+* [HTTP/2] [9] [:authority: localhost:8443]
+* [HTTP/2] [9] [:path: /http2-server/api/ping]
+* [HTTP/2] [9] [user-agent: curl/8.7.1]
+* [HTTP/2] [9] [accept: */*]
+* [HTTP/2] [9] [trace-id: EA911522958647C6]
+* [HTTP/2] [9] [sender-id: 4]
+> GET /http2-server/api/ping HTTP/2
+> Host: localhost:8443
+> User-Agent: curl/8.7.1
+> Accept: */*
+> trace-id: EA911522958647C6
+> sender-id: 4
+> 
+* Request completely sent off
+< HTTP/2 200 
+< content-length: 0
+< date: Tue, 11 Feb 2025 10:11:31 GMT
+< 
+{ [0 byte< HTTP/2 200 
+< content-length: 0
+s data]
+< date: Tue, 11 Feb 2025 10:11:31 GMT
+< 
+{ [0 bytes data]
+< HTTP/2 200 
+< content-length: 0
+< date: Tue, 11 Feb 2025 10:11:31 GMT
+< 
+{ [0 bytes data]
+* Connection #0 to host localhost left intact
+< HTTP/2 200 
+< content-length: 0
+< date: Tue, 11 Feb 2025 10:11:31 GMT
+< 
+{ [0 bytes data]
+< HTTP/2 200 
+< content-length: 0
+< date: Tue, 11 Feb 2025 10:11:31 GMT
+< 
+{ [0 bytes data]
+< HTTP/2 200 
+< content-length: 0
+< date: Tue, 11 Feb 2025 10:11:31 GMT
+< 
+{ [0 bytes data]
+< HTTP/2 500 
+< content-type: text/html;charset=utf-8
+< content-language: en
+< content-length: 1974
+< date: Tue, 11 Feb 2025 10:11:31 GMT
+< 
+{ [1974 bytes data]
+* Connection #0 to host localhost left intact
+client 4 got expected response for request EA911522958647C6, stopping test
+sender 4 received expected response, ending test
