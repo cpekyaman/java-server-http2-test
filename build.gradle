@@ -76,16 +76,23 @@ def runServer(JavaExec task, String mainClass) {
 
     def logLevel = System.getProperty("detail.logLevel", "info")
 
-    task.allJvmArgs = [
+    // main properties
+    task.systemProperty "base.directory", "${projectDir}/work"
+
+    // https keystore
+    task.systemProperty "server.https.keystore.file", "${projectDir}/cert/tomcat_local.p12"
+    task.systemProperty "server.https.keystore.pass", "pkymn"
+
+    // logging
+    task.systemProperty "java.util.logging.manager", "org.apache.logging.log4j.jul.LogManager"
+    task.systemProperty "detail.logLevel", "${logLevel}"
+    task.systemProperty "log4j2.configurationFile", "log4j2-server.xml"
+
+    task.jvmArgs = [
+            '--add-opens=java.base/java.io=ALL-UNNAMED',
             '-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=localhost:8100',
             '-Xms512m',
-            '-Xmx1024m',
-            "-Dbase.directory=${projectDir}/work",
-            '-Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager',
-            "-Dserver.https.keystore.file=${projectDir}/cert/tomcat_local.p12",
-            "-Dserver.https.keystore.pass=pkymn",
-            "-Dlog4j2.configurationFile=log4j2-server.xml",
-            "-Ddetail.logLevel=${logLevel}"
+            '-Xmx1024m'
     ]
 }
 task runTomcat(type: JavaExec) { task ->
@@ -102,14 +109,15 @@ def runClient(JavaExec task, String mainClass) {
 
     def logLevel = System.getProperty("detail.logLevel", "info")
 
-    task.allJvmArgs = [
-            '-Xms512m',
-            '-Xmx512m',
-            "-Dbase.directory=${projectDir}/work",
-            '-Djava.util.logging.manager=org.apache.logging.log4j.jul.LogManager',
-            "-Dlog4j2.configurationFile=log4j2-client.xml",
-            "-Ddetail.logLevel=${logLevel}"
-    ]
+    // main properties
+    task.systemProperty "base.directory", "${projectDir}/work"
+
+    // logging
+    task.systemProperty "java.util.logging.manager", "org.apache.logging.log4j.jul.LogManager"
+    task.systemProperty "detail.logLevel", "${logLevel}"
+    task.systemProperty "log4j2.configurationFile", "log4j2-client.xml"
+
+    task.jvmArgs = [ '-Xms512m', '-Xmx512m' ]
 }
 task runJdkClient(type: JavaExec) { task ->
     runClient(task, 'dev.pkymn.issuedemo.http2.client.jdk.JdkHttp2Client')

@@ -90,7 +90,7 @@ func checkServerRunning(client *http.Client) {
 		if err != nil {
 			if errors.Is(err, syscall.ECONNREFUSED) {
 				fmt.Println("could not connect to server, will try again")
-				time.Sleep(1 * time.Second)
+				time.Sleep(2 * time.Second)
 			} else {
 				fmt.Printf("unexpected error for server ping %s\n", err.Error())
 				os.Exit(2)

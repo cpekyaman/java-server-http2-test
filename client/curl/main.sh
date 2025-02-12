@@ -31,7 +31,7 @@ while [[ $tries -lt $max_tries ]]; do
     break
   elif [[ $exit_code -eq 7 ]]; then
     echo "could not connect to server, will try again"
-    sleep 1
+    sleep 2
   else
     echo "unexpected error $exit_code, exiting"
     exit $exit_code

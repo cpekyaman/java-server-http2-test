@@ -7,9 +7,7 @@ public enum TomcatProperties {
     // Tomcat server
     SERVER_SHUTDOWN_PORT("8005"),
     SERVER_PORT_OFFSET("0"),
-    SERVER_APR_SSL_ENABLE("off"),
-
-    SERVER_USE_NIO2("false");
+    SERVER_APR_SSL_ENABLE("off");
 
     final String defaultValue;
 
@@ -32,9 +30,5 @@ public enum TomcatProperties {
 
     public int getIntValue() {
         return Integer.parseInt(getValue());
-    }
-
-    public boolean getBooleanValue() {
-        return Boolean.parseBoolean(getValue());
     }
 }

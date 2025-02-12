@@ -93,7 +93,7 @@ public abstract class Http2Client {
                     serverRunning = true;
                 } catch (IOException e) {
                     LOG.warn("could not connect to server, will try again", e);
-                    Thread.sleep(1000);
+                    Thread.sleep(2000);
                 }
             }
         } catch (InterruptedException e) {

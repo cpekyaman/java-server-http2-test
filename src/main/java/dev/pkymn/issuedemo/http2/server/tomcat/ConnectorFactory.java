@@ -1,12 +1,7 @@
 package dev.pkymn.issuedemo.http2.server.tomcat;
 
 import dev.pkymn.issuedemo.http2.server.config.ServerProperties;
-import dev.pkymn.issuedemo.http2.server.tomcat.config.TomcatProperties;
-
-
 import org.apache.catalina.connector.Connector;
-import org.apache.coyote.http11.AbstractHttp11JsseProtocol;
-import org.apache.coyote.http11.Http11Nio2Protocol;
 import org.apache.coyote.http11.Http11NioProtocol;
 import org.apache.coyote.http2.Http2Protocol;
 import org.apache.tomcat.util.net.SSLHostConfig;
@@ -18,7 +13,7 @@ final class ConnectorFactory {
     }
 
     static Connector https() {
-        AbstractHttp11JsseProtocol<?> httpsProtocol = createHttpsProtocol();
+        Http11NioProtocol httpsProtocol = createHttpsProtocol();
 
         Connector httpsConnector = new Connector(httpsProtocol);
         httpsConnector.setPort(ServerProperties.SERVER_HTTPS_PORT.getIntValue());
@@ -32,8 +27,8 @@ final class ConnectorFactory {
         return httpsConnector;
     }
 
-    private static AbstractHttp11JsseProtocol<?> createHttpsProtocol() {
-        AbstractHttp11JsseProtocol<?> httpsProtocol = useNio2() ? new Http11Nio2Protocol() : new Http11NioProtocol();
+    private static Http11NioProtocol createHttpsProtocol() {
+        Http11NioProtocol httpsProtocol = new Http11NioProtocol();
 
         httpsProtocol.setSslImplementationName("org.apache.tomcat.util.net.jsse.JSSEImplementation");
         httpsProtocol.setMaxHttpHeaderSize(ServerProperties.SERVER_HTTPS_MAX_HEADER_SIZE.getIntValue());
@@ -68,7 +63,4 @@ final class ConnectorFactory {
         return sslHostConfig;
     }
 
-    private static boolean useNio2() {
-        return TomcatProperties.SERVER_USE_NIO2.getBooleanValue();
-    }
 }

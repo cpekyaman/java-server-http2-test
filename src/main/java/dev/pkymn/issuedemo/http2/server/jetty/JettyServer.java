@@ -49,7 +49,9 @@ public final class JettyServer {
 
         // base http configuration
         HttpConfiguration httpConfig = new HttpConfiguration();
-        httpConfig.addCustomizer(new SecureRequestCustomizer());
+        SecureRequestCustomizer secureRequestCustomizer = new SecureRequestCustomizer();
+        secureRequestCustomizer.setSniHostCheck(false);
+        httpConfig.addCustomizer(secureRequestCustomizer);
         httpConfig.setRequestHeaderSize(ServerProperties.SERVER_HTTPS_MAX_HEADER_SIZE.getIntValue());
         httpConfig.setResponseHeaderSize(ServerProperties.SERVER_HTTPS_MAX_HEADER_SIZE.getIntValue());
 

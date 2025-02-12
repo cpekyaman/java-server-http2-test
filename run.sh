@@ -55,8 +55,6 @@ else
         shift
         ;;
       -s|--server)
-        CLIENT_DIR="${HOME_DIR}"
-
         if [ "$2" = "tomcat" ]; then
           SERVER_CMD="runTomcat"
         elif [ "$2" = "jetty" ]; then

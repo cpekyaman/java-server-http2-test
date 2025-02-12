@@ -124,7 +124,7 @@ def check_server_running(request_url):
                 server_running = True
             except httpx.ConnectError:
                 logging.info("could not connect to server, will try again")
-                time.sleep(1)
+                time.sleep(2)
 
     if not server_running:
         logging.error("server is not running or not reachable, exiting")
