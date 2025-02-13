@@ -6,6 +6,21 @@
 - application with health check endpoints to be called by the monitoring system over http(s) GET.
 - monitoring system uses http2 by default since server supports it.
 
+## version information
+
+- **java:** 
+  - 17.0.9
+- **tomcat:** 
+  - **version with issue:** 10.1.33
+  - **version without issue:** 10.1.24
+- **curl:** 
+  - **production system 1:** 7.76.1 (x86_64-redhat-linux-gnu) libcurl/7.76.1 OpenSSL/3.0.7 zlib/1.2.11 brotli/1.0.9 libidn2/2.3.0 libpsl/0.21.1 (+libidn2/2.3.0) libssh/0.10.4/openssl/zlib nghttp2/1.43.0
+  - **production system 2:** 7.61.1 (x86_64-redhat-linux-gnu) libcurl/7.61.1 OpenSSL/1.1.1k zlib/1.2.11 brotli/1.0.6 libidn2/2.2.0 libpsl/0.20.2 (+libidn2/2.2.0) libssh/0.9.6/openssl/zlib nghttp2/1.33.0
+  - **reproducer (local development machine):** 8.7.1 (x86_64-apple-darwin24.0) libcurl/8.7.1 (SecureTransport) LibreSSL/3.3.6 zlib/1.2.12 nghttp2/1.63.0
+- **go:**
+  - **prod monitoring system:** 1.20
+  - **reproducer (local development machine):** 1.19
+
 ## issue description / timeline
 
 - tomcat upgraded to **10.1.24** on some test systems, to spot mostly javax to jakarta migration related issues.
